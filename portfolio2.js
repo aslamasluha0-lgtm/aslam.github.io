@@ -60,3 +60,33 @@ function sendEmail() {
       btn.textContent = "Send message";
     });
 }
+
+// Hamburger menu toggle (mobile)
+(function () {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener('click', function () {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    const icon = hamburger.querySelector('i');
+    if (icon) {
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    }
+  });
+
+  // Close menu when clicking a nav link
+  document.querySelectorAll('.nav-links a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+      const icon = hamburger.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+  });
+})();
