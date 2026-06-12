@@ -253,7 +253,7 @@ ul {
 #name {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2rem, 8vw, 4.2rem);
+  font-size: 25px;
   letter-spacing: -0.04em;
   line-height: 1.1;
   margin-bottom: 0.6rem;
