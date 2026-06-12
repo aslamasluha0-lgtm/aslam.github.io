@@ -703,7 +703,11 @@ ul { list-style: none; }
 
   .home-img {
     min-height: 320px;
-    order: -1;
+    order: 0;
+  }
+  .home-text {
+    max-width: 680px;
+    margin: 0 auto;
   }
   .img-box { width: 200px; height: 200px; }
   .img-badge { bottom: 20px; }
