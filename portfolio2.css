@@ -259,8 +259,9 @@ ul {
   margin-bottom: 0.6rem;
   transition: 1s color;
   color: #EAF0CE;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  word-wrap: normal;
+  overflow-wrap: normal;
+  word-break: keep-all;
   max-width: 100%;
 }
 
@@ -723,9 +724,11 @@ ul {
   }
   
   #name {
-    font-size: clamp(2rem, 7.5vw, 3rem);
-    line-height: 1.1;
-    word-break: normal;
+    font-size: clamp(1.8rem, 7.5vw, 2.5rem);
+    line-height: 1.2;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    word-wrap: normal;
   }
 
   .bio { 
